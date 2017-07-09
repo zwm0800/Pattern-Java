@@ -14,12 +14,12 @@ public abstract class Duck {
     /**
      * 飞行行为
      */
-    private FlyBehavior flyBehavior;
+    protected FlyBehavior flyBehavior;
 
     /**
      * 鸣叫行为
      */
-    private QuackBehavior quackBehavior;
+    protected QuackBehavior quackBehavior;
 
     /**
      * 鸭子飞行
