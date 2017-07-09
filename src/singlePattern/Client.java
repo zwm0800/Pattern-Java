@@ -32,7 +32,7 @@ public class Client {
             c.setAccessible(true);
             // 调用无参构造实例对象
             LazyUser lazyUser3 = (LazyUser) c.newInstance();
-            // 此时lazyUser3与lazyUser1不再是同一对象
+            // 此时lazyUser3与lazyUser1不再是同一对象实例
             System.out.println(lazyUser3.equals(lazyUser1));
         }
     }
