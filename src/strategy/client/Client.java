@@ -24,17 +24,23 @@ public class Client {
         modelDuck.setFlyBehavior(new FlyNoWay());
         modelDuck.setQuackBehavior(new MuteQuack());
         modelDuck.display();
+        modelDuck.performFly();
+        modelDuck.performQuack();
 
         // 想飞？给它造台火箭，带它装逼带它飞
         modelDuck.setFlyBehavior(new FlyWithRocket());
-
         // 想叫？老板来台5.0的扬声器，让它吼
         modelDuck.setQuackBehavior(new QuackWithSpeaker());
-        modelDuck.display();
+        modelDuck.performQuack();
+        modelDuck.performFly();
 
+        // 绿头鸭
         Duck mallardDuck = new MallardDuck();
         mallardDuck.setQuackBehavior(new Quack());
         mallardDuck.setFlyBehavior(new FlyWithSwings());
         mallardDuck.display();
+
+        mallardDuck.performFly();
+        mallardDuck.performQuack();
     }
 }

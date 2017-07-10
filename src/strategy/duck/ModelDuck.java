@@ -13,7 +13,5 @@ public class ModelDuck extends Duck {
     @Override
     public void display() {
         System.out.println("模型鸭子");
-        performFly();
-        performQuack();
     }
 }
