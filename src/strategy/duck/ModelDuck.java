@@ -6,7 +6,15 @@ package strategy.duck;
  * @see strategy.duck
  */
 public class ModelDuck extends Duck {
-    public ModelDuck() {
 
+
+    /**
+     * 展示模型鸭子
+     */
+    @Override
+    public void display() {
+        System.out.println("模型鸭子");
+        performFly();
+        performQuack();
     }
 }

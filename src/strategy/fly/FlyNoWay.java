@@ -10,6 +10,6 @@ public class FlyNoWay implements FlyBehavior {
 
     @Override
     public void fly() {
-        System.out.println("无法飞行……");
+        System.out.println("它无法飞行……");
     }
 }

@@ -40,6 +40,11 @@ public abstract class Duck {
     }
 
     /**
+     * 各种鸭子样子都不一样。因此，显示方法交由子类去实现
+     */
+    public abstract void display();
+
+    /**
      * 提供飞行行为的setter，子类具备什么飞行行为就传递什么飞行行为具体实现类
      *
      * @param flyBehavior
