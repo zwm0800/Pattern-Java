@@ -7,7 +7,6 @@ package strategy.duck;
  */
 public class ModelDuck extends Duck {
 
-
     /**
      * 展示模型鸭子
      */

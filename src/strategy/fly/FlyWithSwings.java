@@ -13,6 +13,6 @@ public class FlyWithSwings implements FlyBehavior {
      */
     @Override
     public void fly() {
-
+        System.out.println("它用翅膀飞行……");
     }
 }

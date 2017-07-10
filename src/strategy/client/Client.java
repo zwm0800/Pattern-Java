@@ -1,10 +1,13 @@
 package strategy.client;
 
 import strategy.duck.Duck;
+import strategy.duck.MallardDuck;
 import strategy.duck.ModelDuck;
 import strategy.fly.FlyNoWay;
 import strategy.fly.FlyWithRocket;
+import strategy.fly.FlyWithSwings;
 import strategy.quack.MuteQuack;
+import strategy.quack.Quack;
 import strategy.quack.QuackWithSpeaker;
 
 /**
@@ -28,5 +31,10 @@ public class Client {
         // 想叫？老板来台5.0的扬声器，让它吼
         modelDuck.setQuackBehavior(new QuackWithSpeaker());
         modelDuck.display();
+
+        Duck mallardDuck = new MallardDuck();
+        mallardDuck.setQuackBehavior(new Quack());
+        mallardDuck.setFlyBehavior(new FlyWithSwings());
+        mallardDuck.display();
     }
 }
